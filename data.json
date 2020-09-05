@@ -1,0 +1,210 @@
+{
+    "updated": "30-07-2020",
+    "time": "23:30 ",
+    "contests": [
+        {
+            "date": "31-07-20",
+            "time": "16:00",
+            "name": "iVoyant  Developer Hiring Challenge",
+            "platform": "HACKEREARTH",
+            "type": "HIRING",
+            "timestamp": 1596191400.0
+        },
+        {
+            "date": "31-07-20",
+            "time": "16:00",
+            "name": "ThoughtWorks Fullstack Developer Hiring challenge - July 2020",
+            "platform": "HACKEREARTH",
+            "type": "HIRING",
+            "timestamp": 1596191400.0
+        },
+        {
+            "date": "31-07-20",
+            "time": "18:00",
+            "name": "Coda Global FullStack Superhero Hiring Challenge",
+            "platform": "HACKEREARTH",
+            "type": "HIRING",
+            "timestamp": 1596198600.0
+        },
+        {
+            "date": "31-07-20",
+            "time": "18:00",
+            "name": "Coda Global Frontend Superhero Hiring Challenge",
+            "platform": "HACKEREARTH",
+            "type": "HIRING",
+            "timestamp": 1596198600.0
+        },
+        {
+            "date": "31-07-20",
+            "time": "20:00",
+            "enddate": "31-07-20",
+            "endtime": "23:00",
+            "url": "https://www.codechef.com/IEM82020",
+            "name": "IEM Coding Olympiad (IEMCO)",
+            "platform": "CODECHEF",
+            "timestamp": 1596205800.0,
+            "endtimestamp": 1596216600.0
+        },
+        {
+            "date": "01-08-20",
+            "time": "09:30",
+            "name": "August Easy '20",
+            "platform": "HACKEREARTH",
+            "type": "RATED",
+            "timestamp": 1596254400.0
+        },
+        {
+            "date": "02-08-20",
+            "time": "17:30",
+            "url": "https://www.atcoder.jp/contests/abc174",
+            "name": "\u25c9 AtCoder Beginner Contest 174",
+            "platform": "ATCODER",
+            "timestamp": 1596369600.0
+        },
+        {
+            "date": "06-08-20",
+            "time": "09:00",
+            "name": "Simplilearn Hiring Challenge 2020",
+            "platform": "HACKEREARTH",
+            "type": "HIRING",
+            "timestamp": 1596684600.0
+        },
+        {
+            "date": "07-08-20",
+            "time": "15:00",
+            "enddate": "17-08-20",
+            "endtime": "15:00",
+            "url": "https://www.codechef.com/AUG20",
+            "name": "August Challenge 2020",
+            "platform": "CODECHEF",
+            "timestamp": 1596792600.0,
+            "endtimestamp": 1597656600.0
+        },
+        {
+            "date": "07-08-20",
+            "time": "16:00",
+            "name": "Amagi \u2018GO CLOUD\u2019 Challenge",
+            "platform": "HACKEREARTH",
+            "type": "COMPETITIVE",
+            "timestamp": 1596796200.0
+        },
+        {
+            "date": "07-08-20",
+            "time": "20:05",
+            "enddate": "07-08-20",
+            "endtime": "22:05",
+            "name": "Codeforces Round #661 (Div. 2)",
+            "id": 1393,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1596810900.0,
+            "endtimestamp": 1596818100.0
+        },
+        {
+            "date": "09-08-20",
+            "time": "20:05",
+            "enddate": "09-08-20",
+            "endtime": "22:05",
+            "name": "Codeforces Round #662 (Div. 2)",
+            "id": 1391,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1596983700.0,
+            "endtimestamp": 1596990900.0
+        },
+        {
+            "date": "12-08-20",
+            "time": "20:05",
+            "enddate": "12-08-20",
+            "endtime": "22:05",
+            "name": "Codeforces Round #663 (Div. 1)",
+            "id": 1394,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1597242900.0,
+            "endtimestamp": 1597250100.0
+        },
+        {
+            "date": "12-08-20",
+            "time": "20:05",
+            "enddate": "12-08-20",
+            "endtime": "22:05",
+            "name": "Codeforces Round #663 (Div. 2)",
+            "id": 1395,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1597242900.0,
+            "endtimestamp": 1597250100.0
+        },
+        {
+            "date": "14-08-20",
+            "time": "20:05",
+            "enddate": "14-08-20",
+            "endtime": "22:05",
+            "name": "Educational Codeforces Round 93 (Rated for Div. 2)",
+            "id": 1398,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1597415700.0,
+            "endtimestamp": 1597422900.0
+        },
+        {
+            "date": "16-08-20",
+            "time": "20:05",
+            "enddate": "16-08-20",
+            "endtime": "22:35",
+            "name": "Codeforces Global Round 10",
+            "id": 1392,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1597588500.0,
+            "endtimestamp": 1597597500.0
+        },
+        {
+            "date": "23-08-20",
+            "time": "21:30",
+            "enddate": "24-08-20",
+            "endtime": "00:00",
+            "url": "https://www.codechef.com/COOK121",
+            "name": "August Cook-Off 2020",
+            "platform": "CODECHEF",
+            "timestamp": 1598198400.0,
+            "endtimestamp": 1598207400.0
+        },
+        {
+            "date": "25-08-20",
+            "time": "20:05",
+            "enddate": "25-08-20",
+            "endtime": "22:05",
+            "name": "Codeforces Round #664 (Div. 1)",
+            "id": 1396,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1598366100.0,
+            "endtimestamp": 1598373300.0
+        },
+        {
+            "date": "25-08-20",
+            "time": "20:05",
+            "enddate": "25-08-20",
+            "endtime": "22:05",
+            "name": "Codeforces Round #664 (Div. 2)",
+            "id": 1397,
+            "url": "https://codeforces.com/contests",
+            "platform": "CODEFORCES",
+            "timestamp": 1598366100.0,
+            "endtimestamp": 1598373300.0
+        },
+        {
+            "date": "29-08-20",
+            "time": "19:30",
+            "enddate": "29-08-20",
+            "endtime": "22:30",
+            "url": "https://www.codechef.com/LTIME87",
+            "name": "August Lunchtime 2020",
+            "platform": "CODECHEF",
+            "timestamp": 1598709600.0,
+            "endtimestamp": 1598720400.0
+        }
+    ]
+}

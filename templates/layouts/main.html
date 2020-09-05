@@ -1,0 +1,151 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+
+<!-- meta -->
+ <meta charset="UTF-8">
+<meta name="description" content="Get update on all coding contest from codeforces, codechef and atcoder with a tool to add these coding contest to your Google calendar.">
+<meta name="keywords" content="Atcoder codechef codeforces google calendar coding competetive contest ">
+<meta name="author" content="Gr8ayu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- /meta -->
+
+<!-- styles -->
+<link type="text/css" rel="stylesheet" href="/static/css/font-awesome-4.1.0.min.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-3.1.1.min.css">
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-theme-3.1.1.min.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/layout.main.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.responsive.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.quickfix.css" />
+<!-- /styles -->
+
+<!-- favicons -->
+<link rel="shortcut icon" href="/static/ico/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="/static/ico/favicon.png">
+<!-- /favicons -->
+
+<!-- scripts -->
+<script src="/static/js/libs/modernizr-2.8.2.min.js"></script>
+<!--[if lt IE 9]><script src="/static/js/libs/respond-1.4.2.min.js"></script><![endif]-->
+<!-- /scripts -->
+
+</head>
+<body>
+
+  <!-- Wrap all page content here -->
+  
+</div>
+  <div id="wrap" class="container">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default bg-secondary navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+            <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+            <rect width="2" height="2" x="11" y="6" rx=".5"/>
+            </svg> ContestCal
+          </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li {% if request.endpoint == 'events' %} class="active" {% endif %}><a href="{{ url_for('events') }}">Events</a></li>
+            <!-- <li {% if request.endpoint == 'about' %} class="active" {% endif %}><a href="{{ url_for('about') }}">About</a></li> -->
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Add to calendar <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('addcodechef') }}">Codechef</a></li>
+                <li><a href="{{ url_for('addcodeforces') }}">Codeforces</a></li>
+                <li><a href="{{ url_for('addatcoder') }}">Atcoder</a></li>
+                <li><a href="{{ url_for('addhackerearth') }}">Hackerearth</a></li>
+                <li><a href="{{ url_for('addall') }}">Add All</a></li>
+              
+
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+
+            {% if request.endpoint != 'landing' %}
+            <li><a href="{{ url_for('signout') }}">Signout</a></li>
+            {%endif%}
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <main id="content" role="main" class="container">
+
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-block alert-error bg-info fade in">
+              <a class="close" data-dismiss="alert">&times;</a>
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      {% block content %}{% endblock %}
+      
+    </main>
+
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <p>Gr8ayu</p>
+                       
+                            
+      {% block footer %}{% endblock %}
+    </div>
+  </div>
+ 
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script type="text/javascript" src="/static/js/libs/jquery-1.11.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src="/static/js/libs/bootstrap-3.1.1.min.js" defer></script>
+  <script type="text/javascript" src="/static/js/plugins.js" defer></script>
+  <script type="text/javascript" src="/static/js/script.js" defer></script>
+  <!-- Google Analytics - Change UA-XXXXX-X to be your site's ID -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDIB0Yj6vlMPaZ_WaJ6SaFVGFKG2mbhzyM",
+    authDomain: "contestcal1.firebaseapp.com",
+    databaseURL: "https://contestcal1.firebaseio.com",
+    projectId: "contestcal1",
+    storageBucket: "contestcal1.appspot.com",
+    messagingSenderId: "698998086998",
+    appId: "1:698998086998:web:a5c98c603457328c504af7",
+    measurementId: "G-MBLG7EH2KH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>  
+
+</body>
+</html>
